@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
 
-@RequestMapping("/")
+@RequestMapping("/estudiante/api/v1")
 public interface EstudianteAPI {
 
-    @PutMapping("/estudiante/{cedula}")
-    ResponseEntity<EstudianteDTO> modificarEstudiante(@PathVariable("cedula") String cedula);
+    @PutMapping("/estudiante")
+    ResponseEntity<EstudianteDTO> modificarEstudiante(EstudianteDTO estudianteDto);
 
     @DeleteMapping("/estudiante/{cedula}")
     ResponseEntity<String> eliminarEstudiante(@PathVariable("cedula") String cedula);
@@ -22,7 +22,7 @@ public interface EstudianteAPI {
     ResponseEntity<Set<EstudianteDTO>> obtenerTodosEstudiantes();
 
     @PostMapping("/estudiante")
-    ResponseEntity<EstudianteDTO> crearEstudiante(EstudianteDTO employee);
+    ResponseEntity<EstudianteDTO> crearEstudiante(EstudianteDTO estudianteDto);
 
 
 }

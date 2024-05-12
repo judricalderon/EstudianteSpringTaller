@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>co.edu.unbosque</groupId>
-	<artifactId>estudiante</artifactId>
+	<artifactId>estudiantapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>estudiante</name>
 	<description>Demo project for Spring Boot</description>
